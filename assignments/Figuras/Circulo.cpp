@@ -6,7 +6,7 @@ Circulo::Circulo() : Figura() {
     radio = 1;
 }
 
-Circulo::Circulo(int x_, int y_, std:: string _color, int radio_) : Figura(x_, y_, color_) {
+Circulo::Circulo(int x_, int y_, std:: string _color, int radio_) : Figura(x_, y_, _color) {
     radio = radio_;
 }
 
@@ -14,7 +14,7 @@ Circulo::Circulo(int radio_) : Figura() {
     radio = radio_;
 }
 
-Circulo::Circulo(int x_, int y_, std::string color_) : Figura(x_, y_, color) {
+Circulo::Circulo(int x_, int y_, std::string color_) : Figura(x_, y_, color_) {
     radio = 1;
 }
 
@@ -30,7 +30,7 @@ double Circulo::circunferencia() {
     return 2 * radio * M_PI;
 } 
 
-void Circulo::dibuja() {
-    std::cout << "Soy un círculo de color: " << getColor() << "con el centro en (" << std::to_string(getX()) << "," << std::to_string(getY()) << ") de radio = " << std::to_string(radio) << " y circunferencia= " << std::to_string(circunferefncia()) << "." << std::endl;
+void Circulo::dibujar() {
+    std::cout << "Soy un círculo de color: " << getColor() << " con el centro en (" << std::to_string(getX()) << "," << std::to_string(getY()) << ") de radio = " << std::to_string(radio) << " y circunferencia= " << std::to_string(circunferencia()) << "." << std::endl;
 
 }
